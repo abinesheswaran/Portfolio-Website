@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, ThemeProvider, Toolbar, useMediaQuery } from "@mui/material";
+import About from "./components/about";
+import ResponsiveAppBar from "./components/app-bar";
+import Header from "./components/header";
+import Skills from "./components/skills";
+import Work from "./components/work";
+import Projects from "./components/projects";
+import Awards from "./components/awards";
+import Contact from "./components/contact";
+import portfolioTheme from "./theme/theme";
+import Footer from "./components/footer";
+import GlobalFonts from "./styles/fonts";
+import Error from "./components/error";
 
 function App() {
+  const isFullScreen = useMediaQuery("(min-width:1018px)");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={portfolioTheme}>
+      <GlobalFonts />
+      {isFullScreen ? (
+        <>
+          <ResponsiveAppBar />
+          <Box
+            component="main"
+            sx={{ p: "0 150px", bgcolor: "#0A192F" }}
+            id="main-container"
+          >
+            <Toolbar />
+            <Header />
+            <About />
+            <Skills />
+            <Work />
+            <Projects />
+            <Awards />
+            <Contact />
+            <Footer />
+          </Box>
+        </>
+      ) : (
+        <Error />
+      )}
+    </ThemeProvider>
   );
 }
 
