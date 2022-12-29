@@ -28,6 +28,9 @@ const Mail: FC = () => {
           }}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
+          onClick={() => {
+            window.open("mailto:abinesheswaranone@gmail.com");
+          }}
         >
           abinesheswaranone@gmail.com
         </Typography>
