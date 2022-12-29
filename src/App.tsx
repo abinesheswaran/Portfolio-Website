@@ -14,6 +14,7 @@ import Error from "./components/error";
 import Mail from "./components/mail";
 import SocialLinks from "./components/social-links";
 
+
 function App() {
   const isFullScreen = useMediaQuery("(min-width:1018px)");
   return (
