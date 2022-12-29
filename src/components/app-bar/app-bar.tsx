@@ -7,6 +7,7 @@ import {
   Button,
   Grid,
 } from "@mui/material";
+import React from "react";
 import { Menu_Items } from "../../constants";
 import { LogoSvg } from "../../icons/dark-logo";
 import NavLink from "../nav-link";
@@ -17,19 +18,23 @@ interface Props {
 
 const ResponsiveAppBar = () => {
   const HideOnScroll = (props: Props) => {
-    const { children } = props;
     const trigger = useScrollTrigger();
-
     return (
       <Slide appear={false} direction="down" in={!trigger}>
-        {children}
+        {props.children}
       </Slide>
     );
   };
 
   return (
     <HideOnScroll>
-      <AppBar component="nav" sx={{ bgcolor: "#0A192F", px: 10 }}>
+      <AppBar
+        component="nav"
+        sx={{
+          bgcolor: "#0A192F",
+          px: 10,
+        }}
+      >
         <Toolbar>
           <Box sx={{ display: "block", flexGrow: 1 }} component="div">
             <LogoSvg width={"40px"} />
