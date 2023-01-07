@@ -60,9 +60,13 @@ const SocialLinks: FC = () => {
         <Link
           href="https://www.linkedin.com/in/abinesh-eswaran/"
           target={"_blank"}
+          sx={{ "&:hover": { border: "none" } }}
         >
           <LinkedInIcon
-            sx={{ fill: "#a8b2d1", "&:hover": { fill: "#64FFDA" } }}
+            sx={{
+              fill: "#a8b2d1",
+              "&:hover": { fill: "#64FFDA" },
+            }}
           />
         </Link>
       </Grid>
