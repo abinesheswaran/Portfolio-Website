@@ -16,6 +16,7 @@ export const Menu_Items = [
 export const WORK_HISTORY = [
   {
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     position: "Associate Engineer",
     date: "Oct 2022 - Present",
     role: [
@@ -26,6 +27,7 @@ export const WORK_HISTORY = [
   },
   {
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     position: "Trainee Engineer",
     date: "Dec 2021 - Sep 2022",
     role: [
@@ -60,6 +62,7 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     date: "Aug 2021 - Present",
     projectName: "Threat Navigator",
     discription:
@@ -68,6 +71,7 @@ export const PROJECTS = [
   },
   {
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     date: "Nov 2022 - Present",
     projectName: "UCM",
     discription:
@@ -81,6 +85,7 @@ export const AWARDS = [
     title: "Bravo Award",
     role: "Trainee Engineer",
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     discription:
       "Abinesh is a quick learner and can deliver things swiftly with less supervision. He made a positive impact by undertaking Orbit Project UI & Integration work and completing them on time, this was crucial to the stake holders as they must visualize the functional features on the portal and approve them before rolling out to the customers. His commitment and willingness to go to the extra mile is appreciated by all the stakeholders",
     imageName: bravoImg,
@@ -89,6 +94,7 @@ export const AWARDS = [
     title: "Team Award",
     role: "Trainee Engineer",
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     discription:
       "Raksha Team delivered the initial version of one of the promising & complex features of CFC - use case manager in the client portal, which is going to play a key role in driving the Kudelski Security business & many customers are looking forward to this feature. The team owned the product, collaborated exceptionally well with different teams & delivered on time. The team was quick in learning new technologies that were required for feature development & quality delivery.",
     imageName: teamawardImg,
@@ -97,6 +103,7 @@ export const AWARDS = [
     title: "Promotion",
     role: "Trainee Engineer",
     companyName: "Kudelski Security",
+    companyUrl: "https://kudelskisecurity.com/",
     discription:
       "We are happy to acknowledge the contribution you have made to Nagra Kudelski in the past year. We appreciate your efforts and dedication. Considering your commitment and performance to the organization, we are glad to promote you to Associate - Engineering at Level 7.",
     imageName: promotionImg,

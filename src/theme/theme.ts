@@ -36,6 +36,18 @@ const portfolioTheme = createTheme({
         },
       },
     },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#64FFDA",
+          textDecoration: "none",
+          fontFamily: "Calibre, sans-serif",
+          "&:hover": {
+            borderBottom: "1px solid #64FFDA",
+          },
+        },
+      },
+    },
   },
 });
 export default portfolioTheme;

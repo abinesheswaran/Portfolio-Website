@@ -17,6 +17,7 @@ const Awards: FC = () => {
             title={el.title}
             role={el.role}
             companyName={el.companyName}
+            companyUrl={el.companyUrl}
             discription={el.discription}
             imageName={el.imageName}
           />

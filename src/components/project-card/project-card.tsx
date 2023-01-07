@@ -1,8 +1,10 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Link, Paper, Typography } from "@mui/material";
 import { FC, useState } from "react";
+import ProjectTechnology from "../project-technology";
 
 interface Props {
   companyName: string;
+  companyUrl: string;
   date: string;
   projectName: string;
   discription: string;
@@ -10,6 +12,7 @@ interface Props {
 }
 const ProjectCard: FC<Props> = ({
   companyName,
+  companyUrl,
   date,
   projectName,
   discription,
@@ -30,7 +33,13 @@ const ProjectCard: FC<Props> = ({
         <Grid item container sx={{ p: 3 }} spacing={2} flexDirection="column">
           <Grid container item justifyContent="space-between">
             <Grid item>
-              <Typography variant="h6">@ {companyName}</Typography>
+              <Link
+                href={companyUrl}
+                target={"_blank"}
+                sx={{ fontSize: "14px", fontWeight: 500 }}
+              >
+                @ {companyName}
+              </Link>
             </Grid>
             <Grid item>
               <Typography sx={{ color: "#8892B0", fontSize: "14px" }}>
@@ -48,9 +57,7 @@ const ProjectCard: FC<Props> = ({
           </Grid>
           <Grid container item spacing={2} sx={{ color: "#8892B0" }}>
             {technologies.map((el, key) => (
-              <Grid item key={key}>
-                <Typography sx={{ fontSize: "13px" }}>{el}</Typography>
-              </Grid>
+              <ProjectTechnology technologyName={el} key={key} />
             ))}
           </Grid>
         </Grid>

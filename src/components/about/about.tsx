@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 import { FC } from "react";
 import Title from "../title";
 import ImageContainer from "../image-container";
@@ -34,9 +34,15 @@ const About: FC = () => {
           </Grid>
           <Grid item>
             <Typography variant="h4">
-              Fast-forward to today, and I’ve had the privilege of working at
-              Kudelski security. My main focus these days is building fast and
-              scalable application at Kudelski security.
+              Fast-forward to today, and I’ve had the privilege of working at{" "}
+              <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
+                Kudelski security.
+              </Link>{" "}
+              My main focus these days is building fast and scalable application
+              at{" "}
+              <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
+                Kudelski security.
+              </Link>
             </Typography>
           </Grid>
           <Grid item>

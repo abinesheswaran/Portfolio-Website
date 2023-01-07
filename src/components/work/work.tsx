@@ -21,6 +21,7 @@ const Work: FC = () => {
             <WorkCard
               key={key}
               companyName={el.companyName}
+              companyUrl={el.companyUrl}
               position={el.position}
               date={el.date}
               role={el.role}
