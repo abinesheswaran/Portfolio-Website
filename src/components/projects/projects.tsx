@@ -21,6 +21,7 @@ const Projects: FC = () => {
           <ProjectCard
             key={key}
             companyName={el.companyName}
+            companyUrl={el.companyUrl}
             date={el.date}
             projectName={el.projectName}
             discription={el.discription}

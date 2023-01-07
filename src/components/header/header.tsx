@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Link, Typography } from "@mui/material";
 import { FC } from "react";
 
 const Header: FC = () => {
@@ -30,7 +30,10 @@ const Header: FC = () => {
         <Typography variant="h4" sx={{ width: "580px" }}>
           I’m a associate engineer specializing in building (and occasionally
           designing) react application. Currently, I’m focused on building fast
-          and reusable things at Kudelski security.
+          and reusable things at{" "}
+          <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
+            Kudelski security.
+          </Link>
         </Typography>
       </Grid>
       <Grid item>

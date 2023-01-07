@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 import { FC } from "react";
 import { QuotationLogo } from "../../icons/quotation-logo";
 import ImageContainer from "../image-container";
@@ -7,6 +7,7 @@ interface Props {
   title: string;
   role: string;
   companyName: string;
+  companyUrl: string;
   discription: string;
   imageName: string;
 }
@@ -15,6 +16,7 @@ const AwardCard: FC<Props> = ({
   title,
   role,
   companyName,
+  companyUrl,
   discription,
   imageName,
 }) => {
@@ -30,12 +32,18 @@ const AwardCard: FC<Props> = ({
         <Grid item>
           <Typography variant="h2">{title}</Typography>
         </Grid>
-        <Grid item container spacing={1} alignItems="center">
+        <Grid item container spacing={1} alignItems="baseline">
           <Grid item>
             <Typography variant="h3">{role}</Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h6">@ {companyName}</Typography>
+            <Link
+              href={companyUrl}
+              target={"_blank"}
+              sx={{ fontSize: "14px", fontWeight: 500 }}
+            >
+              @ {companyName}
+            </Link>
           </Grid>
         </Grid>
         <Grid item container flexWrap="nowrap" spacing={1}>
