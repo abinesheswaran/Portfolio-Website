@@ -7,7 +7,7 @@ import {
   Button,
   Grid,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Menu_Items } from "../../constants";
 import { LogoSvg } from "../../icons/dark-logo";
 import NavLink from "../nav-link";
@@ -17,6 +17,7 @@ interface Props {
 }
 
 const ResponsiveAppBar = () => {
+  const [hover, setHover] = useState(false);
   const HideOnScroll = (props: Props) => {
     const trigger = useScrollTrigger();
     return (
@@ -37,7 +38,12 @@ const ResponsiveAppBar = () => {
       >
         <Toolbar>
           <Box sx={{ display: "block", flexGrow: 1 }} component="div">
-            <LogoSvg width={"40px"} />
+            <LogoSvg
+              width={"40px"}
+              style={{ fill: hover ? "#ffffff1f" : "" }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+            />
           </Box>
           <Box>
             <Grid container spacing={3}>
