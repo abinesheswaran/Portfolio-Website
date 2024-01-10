@@ -7,6 +7,7 @@ import myPhoto from "../../images/me.jpg";
 import TechnologiesWorked from "../technologies-worked";
 
 const About: FC = () => {
+  console.log(import.meta.env);
   return (
     <Grid
       container
