@@ -12,7 +12,7 @@ const TechnologiesWorked: FC<Props> = ({ technologie }) => {
     <Grid
       container
       item
-      xs={6}
+      xs={2} sm={4} md={3}
       alignItems="baseline"
       spacing={1}
       onMouseEnter={() => setHover(true)}

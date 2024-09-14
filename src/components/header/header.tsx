@@ -28,13 +28,7 @@ const Header: FC = () => {
       </Grid>
       <Grid item>
         <Typography variant="h4" sx={{ width: "580px" }}>
-          I’m a associate engineer specializing in building (and occasionally
-          designing) react application. Currently, I’m focused on building fast
-          and reusable things at{" "}
-          <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
-            Kudelski security.
-          </Link>
-        </Typography>
+          Frontend Developer with 3+ years of experience in building responsive web applications using React.js, JavaScript, and TypeScript. Skilled in turning Figma designs into polished UIs and integrating with backend services via Node.js. Experienced in Agile collaboration, version control with Git, and Docker-based deployments. Passionate about writing clean, maintainable code and improving app performance.        </Typography>
       </Grid>
       <Grid item>
         <Button

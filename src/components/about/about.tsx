@@ -34,15 +34,10 @@ const About: FC = () => {
           </Grid>
           <Grid item>
             <Typography variant="h4">
-              Fast-forward to today, and I’ve had the privilege of working at{" "}
+              Fast forward, and now I'm building fast, scalable applications at{" "}
               <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
                 Kudelski security.
               </Link>{" "}
-              My main focus these days is building fast and scalable application
-              at{" "}
-              <Link href={"https://kudelskisecurity.com/"} target={"_blank"}>
-                Kudelski security.
-              </Link>
             </Typography>
           </Grid>
           <Grid item>
@@ -50,7 +45,7 @@ const About: FC = () => {
               Here are a few technologies I’ve been working with recently:
             </Typography>
           </Grid>
-          <Grid container item xs={6} spacing={1}>
+          <Grid container item spacing={{ xs: 2, md: 3 }}>
             {TECHNOLOGIES_WORKED.map((technologie, key) => (
               <TechnologiesWorked technologie={technologie} key={key} />
             ))}
